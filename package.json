@@ -1,18 +1,17 @@
 {
   "name": "sass-space",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a set of css class names for quick and easy spacing using css classes.",
   "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "css",
     "sass",
     "spacing",
     "padding",
-    "margin",
-    "rapid",
-    "prototyping"
+    "margin"
   ],
   "author": "Ben Tatum bentatum@me.com (http://github.com/bentatum)",
   "license": "ISC"
