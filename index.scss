@@ -6,7 +6,7 @@ $spacing-large: 2rem !default;
 $spacing-xlarge: 4rem !default;
 $spacing-xxlarge: 5rem !default;
 
-$sizes: "zero", $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medium, $spacing-large, $spacing-xlarge, $spacing-xxlarge;
+$sizes: 0, $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medium, $spacing-large, $spacing-xlarge, $spacing-xxlarge;
 
 @each $space in "padding", "margin" {
 
@@ -22,7 +22,7 @@ $sizes: "zero", $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medi
 
         @each $size in $sizes {
 
-            @if $size == "zero"           { $sizeAbbr: "n";   }
+            @if $size == 0                { $sizeAbbr: "n";   }
             @if $size == $spacing-xxsmall { $sizeAbbr: "xxs"; }
             @if $size == $spacing-xsmall  { $sizeAbbr: "xs";  }
             @if $size == $spacing-small   { $sizeAbbr: "s";   }
