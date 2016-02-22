@@ -6,28 +6,29 @@ $spacing-large: 2rem !default;
 $spacing-xlarge: 4rem !default;
 $spacing-xxlarge: 5rem !default;
 
-$sizes: $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medium, $spacing-large, $spacing-xlarge, $spacing-xxlarge;
+$sizes: "zero", $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medium, $spacing-large, $spacing-xlarge, $spacing-xxlarge;
 
 @each $space in "padding", "margin" {
 
     @if $space == "padding" { $spaceAbbr: "p"; }
-    @if $space == "margin" { $spaceAbbr: "m"; }
+    @if $space == "margin"  { $spaceAbbr: "m"; }
 
     @each $direction in "top", "right", "bottom", "left" {
 
-        @if $direction == "top" { $dirAbbr: "t"; }
-        @if $direction == "right" { $dirAbbr: "r"; }
+        @if $direction == "top"    { $dirAbbr: "t"; }
+        @if $direction == "right"  { $dirAbbr: "r"; }
         @if $direction == "bottom" { $dirAbbr: "b"; }
-        @if $direction == "left" { $dirAbbr: "l"; }
+        @if $direction == "left"   { $dirAbbr: "l"; }
 
         @each $size in $sizes {
 
+            @if $size == "zero"           { $sizeAbbr: "n";   }
             @if $size == $spacing-xxsmall { $sizeAbbr: "xxs"; }
-            @if $size == $spacing-xsmall { $sizeAbbr: "xs"; }
-            @if $size == $spacing-small { $sizeAbbr: "s"; }
-            @if $size == $spacing-medium { $sizeAbbr: "m"; }
-            @if $size == $spacing-large { $sizeAbbr: "l"; }
-            @if $size == $spacing-xlarge { $sizeAbbr: "xl"; }
+            @if $size == $spacing-xsmall  { $sizeAbbr: "xs";  }
+            @if $size == $spacing-small   { $sizeAbbr: "s";   }
+            @if $size == $spacing-medium  { $sizeAbbr: "m";   }
+            @if $size == $spacing-large   { $sizeAbbr: "l";   }
+            @if $size == $spacing-xlarge  { $sizeAbbr: "xl";  }
             @if $size == $spacing-xxlarge { $sizeAbbr: "xxl"; }
 
             .#{$spaceAbbr}#{$dirAbbr}#{$sizeAbbr} {
