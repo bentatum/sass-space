@@ -1,6 +1,6 @@
 {
   "name": "sass-space",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "a set of css class names for quick and easy spacing using css classes.",
   "main": "index.scss",
   "scripts": {
