@@ -6,8 +6,6 @@ A set of css class names for quick and simple spacing using css classes.
 
 ## Setup:
 
-In your style.scss:
-
 ```scss
 // Define your spacing constants before importing sass-space
 
