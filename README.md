@@ -4,7 +4,7 @@ A set of css class names for quick and simple spacing using css classes.
 ## Install
 `npm i sass-space`
 
-## Setup:
+## Setup
 
 ```scss
 // Define your spacing constants before importing sass-space
@@ -19,7 +19,7 @@ $spacing-xlarge: 4rem;
 @import "~/sass-space/index";
 ```
 
-This gives you xxs, xs, s, m, l, xl and xxl in all directions in both margin and padding.
+## Usage
 
 Here are all the class names sass-space gives you.
 
