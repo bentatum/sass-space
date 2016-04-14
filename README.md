@@ -1,6 +1,9 @@
 # sass-space
 A set of css class names for quick and simple spacing using css classes.
 
+## Install
+`npm i sass-space`
+
 ## Setup:
 
 In your style.scss:
