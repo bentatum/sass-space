@@ -11,12 +11,12 @@ $sizes: 0, $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medium, $
 @each $space in "padding", "margin" {
 
     $spaceAbbr: "";
-
     @if $space == "padding" { $spaceAbbr: "p"; }
     @if $space == "margin"  { $spaceAbbr: "m"; }
 
     @each $direction in "top", "right", "bottom", "left" {
 
+        $dirAbbr: "";
         @if $direction == "top"    { $dirAbbr: "t"; }
         @if $direction == "right"  { $dirAbbr: "r"; }
         @if $direction == "bottom" { $dirAbbr: "b"; }
@@ -24,6 +24,7 @@ $sizes: 0, $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medium, $
 
         @each $size in $sizes {
 
+            $sizeAbbr: "";
             @if $size == 0                { $sizeAbbr: "n";   }
             @if $size == $spacing-xxsmall { $sizeAbbr: "xxs"; }
             @if $size == $spacing-xsmall  { $sizeAbbr: "xs";  }
