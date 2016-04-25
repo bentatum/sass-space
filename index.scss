@@ -10,6 +10,8 @@ $sizes: 0, $spacing-xxsmall, $spacing-xsmall, $spacing-small, $spacing-medium, $
 
 @each $space in "padding", "margin" {
 
+    $spaceAbbr: "";
+
     @if $space == "padding" { $spaceAbbr: "p"; }
     @if $space == "margin"  { $spaceAbbr: "m"; }
 
